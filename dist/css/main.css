@@ -52,8 +52,8 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       background: url("../img/portrait2.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
@@ -122,7 +122,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -171,7 +171,7 @@ main {
 
 .bio {
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 .job-1 {
   grid-area: job1; }
@@ -283,7 +283,7 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (max-width: 1171px) {
+@media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
@@ -310,7 +310,7 @@ main {
     transform: translate3d(-100%, 0, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25 vh;
+    height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portraitsmall.jpg");
