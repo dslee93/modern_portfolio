@@ -94,10 +94,55 @@ main {
 .job-1 {
   grid-area: job1;
 }
-.job-1 {
+.job-2 {
   grid-area: job2;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .graphcontainer {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 2px; /* Add top padding */
+    padding-bottom: 2px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+
+  .html {
+    width: 80%;
+    background-color: #4caf50;
+  } /* Green */
+  .python {
+    width: 80%;
+    background-color: #2196f3;
+  } /* Blue */
+  .js {
+    width: 75%;
+    background-color: #f44336;
+  } /* Red */
+  .csharp {
+    width: 60%;
+    background-color: #808080;
+  } /* Dark Grey */
+  .mongodb {
+    width: 68%;
+    background-color: rgb(255, 126, 6);
+  }
+  .mysql {
+    width: 70%;
+    background-color: rgb(250, 7, 197);
+  }
+  .react {
+    width: 75%;
+    background-color: rgb(4, 201, 250);
+  }
 }
-.job-1 {
+.job-3 {
   grid-area: job3;
 }
 
@@ -107,6 +152,42 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
+// work /projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  color: #fff;
+}
 #main-footer {
   text-align: center;
   padding: 1rem;
