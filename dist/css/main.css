@@ -176,10 +176,52 @@ main {
 .job-1 {
   grid-area: job1; }
 
-.job-1 {
-  grid-area: job2; }
+.job-2 {
+  grid-area: job2;
+  /* Green */
+  /* Blue */
+  /* Red */
+  /* Dark Grey */ }
+  .job-2 p {
+    margin: 0;
+    padding: 0; }
+  .job-2 .graphcontainer {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */ }
+  .job-2 .skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 2px;
+    /* Add top padding */
+    padding-bottom: 2px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */ }
+  .job-2 .html {
+    width: 80%;
+    background-color: #4caf50; }
+  .job-2 .python {
+    width: 80%;
+    background-color: #2196f3; }
+  .job-2 .js {
+    width: 75%;
+    background-color: #f44336; }
+  .job-2 .csharp {
+    width: 60%;
+    background-color: #808080; }
+  .job-2 .mongodb {
+    width: 68%;
+    background-color: #ff7e06; }
+  .job-2 .mysql {
+    width: 70%;
+    background-color: #fa07c5; }
+  .job-2 .react {
+    width: 75%;
+    background-color: #04c9fa; }
 
-.job-1 {
+.job-3 {
   grid-area: job3; }
 
 .job {
@@ -187,12 +229,47 @@ main {
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid; }
 
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  color: #fff; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: black;
   color: #fff;
   height: 60px; }
+
+@media screen and (max-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  grid-template-columns: repeat(3, 1fr); }
 
 @media screen and (max-width: 768px) {
   main {
@@ -222,7 +299,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
