@@ -93,9 +93,23 @@ main {
 
 .job-1 {
   grid-area: job1;
+
+  h3 {
+    margin: 1rem;
+    color: $secondary-color;
+  }
+  p {
+    margin: 1rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
 }
 .job-2 {
   grid-area: job2;
+
+  h3 {
+    color: $secondary-color;
+  }
 
   p {
     margin: 0;
@@ -108,8 +122,8 @@ main {
   }
   .skills {
     text-align: right; /* Right-align text */
-    padding-top: 2px; /* Add top padding */
-    padding-bottom: 2px; /* Add bottom padding */
+    padding-top: 1px; /* Add top padding */
+    padding-bottom: 1px; /* Add bottom padding */
     color: white; /* White text color */
   }
 
@@ -129,21 +143,24 @@ main {
     width: 60%;
     background-color: #808080;
   } /* Dark Grey */
-  .mongodb {
-    width: 68%;
-    background-color: rgb(255, 126, 6);
-  }
   .mysql {
     width: 70%;
     background-color: rgb(250, 7, 197);
   }
-  .react {
-    width: 75%;
-    background-color: rgb(4, 201, 250);
-  }
 }
 .job-3 {
   grid-area: job3;
+
+  h3 {
+    color: $secondary-color;
+    margin: 1rem;
+  }
+  a {
+    font-weight: bold;
+  }
+  iframe {
+    margin-left: 1rem;
+  }
 }
 
 .job {
@@ -158,6 +175,7 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   img {
+    height: 425px;
     width: 100%;
     border: 3px #fff solid;
     &:hover {
